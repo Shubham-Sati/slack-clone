@@ -3,8 +3,7 @@
 function App() {
   return (
     <div className="App">
-      <h1>Shubham Sati</h1>
-
+      <p>this is starting point</p>
       {/* Header */}
       {/* sideBar */}
       {/* React-Router -> chat screen */}
