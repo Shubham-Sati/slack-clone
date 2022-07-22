@@ -5,6 +5,7 @@
     padding: 10px 0;
     background-color: var(--slack-color);
     color: white;
+    
 }
 
 .header__left{
@@ -35,7 +36,13 @@
     background-color: transparent;
     border: none;
     text-align: center;
+    font-size: 15px;
     min-width: 35vw;
+    color: white;
+}
+
+.header__search > input:focus{
+    outline: none;
 }
 
 .header__right{
