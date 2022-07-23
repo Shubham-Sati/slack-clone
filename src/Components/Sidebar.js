@@ -19,8 +19,8 @@ import db from '../firebase';
 function Sidebar() {
 
   // fetching all the Db details like channels and their messages
-
   const[channels, setChannels] = useState([]);  // this is called useState
+
   useEffect(() => {
       // This tells that run this code once when the sidebar component load.
       db.collection('rooms').onSnapshot(snapshot => (
@@ -61,12 +61,12 @@ function Sidebar() {
         <hr />
         <SidebarOption Icon={ExpandMoreIcon} title="Channels"/>
         <hr />
-        <SidebarOption Icon={AddIcon} title="Add Channels"/>
+        <SidebarOption Icon={AddIcon} addChannelOption title="Add Channels"/>
 
         {/* {connect to DB Firebase and list all the channels} */}
         {/* {we will be using sidebarOption again and again} */}
         {channels.map(channel => (
-          <SidebarOption title={channel.name} id={channel.id} />
+          <SidebarOption title={channel.name} id={channel.id} key={channel.id}/>
         ))}
 
     </div>
