@@ -33,7 +33,20 @@ function App() {
                     <Chat />
                   </Route>
                   <Route path="/">
-                    <h1>Welcome</h1>
+                    <div className="para__body"> 
+
+                        <div className="wellcome__text">
+                            <h1>Welcome</h1>
+                        </div>
+
+                        <div className="para__text">
+                            <h3 ><span className="dot"></span> This is an app where you can chat with all community members.</h3>
+                            <h3 ><span className="dot"></span> Check out all the channels on sidebar bottom part( left bottom ).</h3>
+                            <h3 ><span className="dot"></span> Try creating new channels and enjoy chatting.</h3>
+                        </div>
+
+                    </div>
+                    
                     {/* <Chat /> */}
                   </Route>
                 </Switch>
