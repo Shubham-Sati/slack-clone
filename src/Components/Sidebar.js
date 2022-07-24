@@ -14,12 +14,14 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import db from '../firebase';
+import { useStateValue } from '../StateProvider';
 
 
 function Sidebar() {
 
   // fetching all the Db details like channels and their messages
   const[channels, setChannels] = useState([]);  // this is called useState
+  const[{ user }] = useStateValue();
 
   useEffect(() => {
       // This tells that run this code once when the sidebar component load.
@@ -39,13 +41,15 @@ function Sidebar() {
 
 
   return (
+
+
     <div className='sidebar'>
         <div className='sidebar__header'>
             <div className='sidebar_info'>
-                <h2>Physics Class</h2>
+                <h2>Slack App</h2>
                 <h3>
                     <FiberManualRecordIcon className=''/>
-                    Shubham Sati
+                    {user?.displayName}
                 </h3>
             </div>
             <CreateIcon />

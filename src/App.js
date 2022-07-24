@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import './App.css';
 import Chat from "./Components/Chat";
-
 import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "./Components/Login";
+import { useStateValue } from "./StateProvider";
 
 
 function App() {
-  const [user , setUser] = useState( "shubham" );
-
+  const [{ user } , dispatch ] = useStateValue();
 
   return (
     <div className="app">
       <Router>
         {!user ? ( 
-            <h1> LOG In Page</h1>
+            <Login />
         ) : (
           <>
             {/* Header */}
