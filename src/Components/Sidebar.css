@@ -53,6 +53,24 @@
 
 .sidebar__channels{
     height: 27vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    
 }
+
+.sidebar__channels::-webkit-scrollbar{
+    width: 10px; 
+}
+
+
+.sidebar__channels::-webkit-scrollbar-track {
+    background: #49274b;        /* color of the tracking area */
+    
+  }
+
+.sidebar__channels::-webkit-scrollbar-thumb {
+    background-color: #9370DB;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--slack-color);  /* creates padding around scroll thumb */
+  }
+
 
