@@ -10,8 +10,7 @@
 .sidebar__header{
     display: flex;
     border-bottom: 1px solid #49274b;
-    padding-bottom: 10px;
-    padding: 13px;
+    padding: 2vh;
 }
 
 .sidebar__header > .MuiSvgIcon-root{
@@ -29,7 +28,7 @@
 .sidebar_info > h2{
     font-size: 15px;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 1.3vh;
 }
 
 .sidebar_info > h3{
@@ -37,20 +36,23 @@
     align-items: center;
     font-size: 13px;
     font-weight: 400;
-}
+} 
 
 .sidebar_info > h3 > .MuiSvgIcon-root{
     color: greenyellow;
     font-size: 14px;
-    margin-top: 1px;
+    margin-top: 0.1vh;
     margin-right: 2px;
 }
 
 .sidebar > hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
     border: 1px solid #49274b;
 }
 
-
+.sidebar__channels{
+    height: 27vh;
+    overflow: scroll;
+}
 

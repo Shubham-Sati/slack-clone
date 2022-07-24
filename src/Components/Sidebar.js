@@ -37,12 +37,7 @@ function Sidebar() {
       ))
   }, [])
 
-
-
-
   return (
-
-
     <div className='sidebar'>
         <div className='sidebar__header'>
             <div className='sidebar_info'>
@@ -54,6 +49,7 @@ function Sidebar() {
             </div>
             <CreateIcon />
         </div>
+
         <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
         <SidebarOption Icon={AllInboxIcon} title="Mention & Rection"/>
         <SidebarOption Icon={DraftsIcon} title="Saved Items"/>
@@ -69,10 +65,11 @@ function Sidebar() {
 
         {/* {connect to DB Firebase and list all the channels} */}
         {/* {we will be using sidebarOption again and again} */}
-        {channels.map(channel => (
-          <SidebarOption title={channel.name} id={channel.id} key={channel.id}/>
-        ))}
-
+        <div className='sidebar__channels'>
+            {channels.map(channel => (
+              <SidebarOption title={channel.name} id={channel.id} key={channel.id}/>
+            ))}
+        </div>
     </div>
   )
 }

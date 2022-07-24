@@ -1,7 +1,7 @@
 
 .sidebarOption{
     display: flex;
-    align-items: center;
+    align-items: center; 
     font-size: 12px;
     padding-left: 5px;
     cursor: pointer;
@@ -13,16 +13,16 @@
 }
 
 .sidebarOption__icon{
-    padding: 10px;
+    padding: 1.3vh;
     font-size: 15px !important;
 }
 
 .sidebarOption__channel{
-    padding: 10px 0;
+    padding: 1.3vh 0;
 }
 
 .sidebarOption__hash{
-    padding: 10px;
+    padding: 1.5vh;
 }
 
 .sidebarOption > h3{

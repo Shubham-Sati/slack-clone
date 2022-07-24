@@ -9,7 +9,33 @@ body{
     height: 100vh;
 }
 
+.para__body{
+    position: relative;
+}
 
+.wellcome__text{
+    position: fixed;
+    top: 150px;
+    left: 330px;
+}
 
+.para__text{
+    position: fixed;
+    top: 200px;
+    left: 330px;
+}
+
+.para__text > h3{
+    padding: 10px;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #7c1d7e;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
 
 
